@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower">
+
+    <block wx:for="{{groups}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+        <view class="feed-item" data-groupid="{{item.groupid}}" bindtap="bindItemTap">
+            <view class="feed-source">
+                 <a class="">
+                    <view class="avatar">
+                        <image wx:if="{{item.uavatar}}" src="{{item.uavatar}}"></image>
+                    <text>{{item.uname}}发布了一个话题</text>
+                    </view>
+                </a>
+              <text>{{item.create_time}}</text>
+                <image class="item-more" mode="aspectFit" src="../../images/more.png"></image>
+            </view>
+            <view class="feed-content">
+                <view class="question">
+                  <open-data type="groupName" class="group-name" open-gid="{{item.groupid}}"></open-data>
+                </view>
+                <view class="answer-body">
+                    <view class="answer-actions">
+                        <view class="comments">
+                            <a>该群有{{item.group_count}}个话题正在头脑风暴中 </a>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+    <block wx:if="{{groups.length < 1}}">
+				<view class="group-placeholder">
+          <view class="group_placeholder-item">据说每位不二的同学</view>
+          <view class="group_placeholder-item">平均有6个话题圈子正在热聊中</view>
+          <view class="group_placeholder-item">快快发布话题迎头赶上哈~</view>
+        </view>
+			</block>
+</scroll-view>
+

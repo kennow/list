@@ -1,0 +1,21 @@
+<!--pages/comment/comment.wxml-->
+<view class="comment-container">
+	
+	<!-- book name -->
+	<view class="book-name">
+		<text>{{topicInfo.name}}</text>
+	</view>
+
+	<!-- comment area -->
+	<view class="comment-area bg-white">
+		<textarea placeholder="关于这个话题的看法..." maxlength="140" value="{{comment}}" bindinput="inputComment"></textarea>
+	</view>
+
+	<!-- bottom button -->
+	<form report-submit bindsubmit="submitComment">
+	    <view class="fixed-bottom block-full-width flex-container bg-white">
+	        <button class="btn" style="background-color: #298DE5;margin-top: 20px;" type="primary" size="default" formType="submit"> 提交评论 </button>
+	    </view>
+    </form>
+
+</view>

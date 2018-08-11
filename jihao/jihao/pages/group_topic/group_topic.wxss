@@ -1,0 +1,46 @@
+
+.container{
+  height:100%;
+}
+
+.container.withtab{
+  margin: 5rpx 0 0 0;
+}
+
+.placehold{
+  font-size: 28rpx;
+  padding: 0rpx 0;
+}
+
+.container .feed-item .feed-content .question a{
+  display: inline-block;
+  height: 40rpx;
+}
+.container .feed-item .feed-content .question .avatar image{
+
+  display: inline-block;
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 45rpx;
+  top: 10rpx;
+  vertical-align: middle;
+}
+
+.container .feed-item .feed-content .question text{
+  font-size: 28rpx;
+  font-weight: 600px;
+  line-height: 40rpx;
+  text-space: 5rpx;
+}
+
+/*feed-item part is in app.wxss for multiplexing*/
+.group-topic-placeholder {
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+	justify-content: center;
+	align-items: center;
+  font-size: 28rpx;
+  margin-top: 375rpx;
+	color: #aaa;
+}

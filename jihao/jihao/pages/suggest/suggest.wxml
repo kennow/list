@@ -1,0 +1,11 @@
+<!--pages/suggest/suggest.wxml-->
+<view class="layout-column mar-left-right">
+    <textarea class="border-content" maxlength="-1" placeholder="请输入您要反馈的内容，谢谢~" placeholder-class="placeholdText" bindinput="inputContent" name="content"/>
+    <textarea class="border-email"  placeholder="请输入您的电子邮箱" placeholder-class="placeholdText" bindinput="inputEmail" name="email" maxlength="50"/>
+</view>
+
+<form report-submit bindsubmit="submitSuggest">
+    <view>
+        <button class="btn" type="primary" size="default" style="background-color: #298DE5;margin-top: 20px;" formType="submit">提交反馈</button>
+    </view>
+</form>

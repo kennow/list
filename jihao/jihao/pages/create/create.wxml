@@ -1,0 +1,11 @@
+
+<view class="layout-column mar-left-right">
+    <textarea class="border-title" maxlength="50" placeholder="话题标题" placeholder-class="placeholdText" bindinput="inputName" name="name"/>
+    <textarea class="border-content"  placeholder="话题内容" placeholder-class="placeholdText" bindinput="inputContent" name="content" maxlength="-1"/>
+</view>
+
+<form report-submit bindsubmit="submitTopic">
+    <view>
+        <button class="btn" type="primary" size="default" style="background-color: #298DE5;margin-top: 20px;" formType="submit">下一步</button>
+    </view>
+</form>

@@ -1,0 +1,50 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.9",
+	"isGameTourist": false,
+	"appid": "wx27dfbca7f8643da8",
+	"projectname": "topicx",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "微信群001",
+					"pathName": "pages/create/create",
+					"query": "",
+					"scene": "1044",
+					"shareInfo": {
+						"groupName": "测试模拟群1",
+						"shareName": "x355KUmlPZKMAdYqtVxHVwaUNmj262l91dagxL_Rldg@cr4dev",
+						"shareKey": "571ISoU6SGwhWCEl2rPg3u9Vorz2gQKm3SPqtSHdS4Woo6xwguenPZjCE0sIGlteTdfRpDY_gZl55_Q4_OQ5Lw~~"
+					}
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,25 @@
+/**index.wxss**/
+
+.container{
+  padding: 0;
+  font-size: 14rpx;
+  background: white;
+  color: #000;
+  height: 1500rpx;
+}
+/*feed-item part is in app.wxss for multiplexing*/
+.group-placeholder {
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+	justify-content: center;
+	align-items: center;
+  font-size: 28rpx;
+  margin-top: 375rpx;
+  flex-basis:200rpx;
+	color: #aaa;
+}
+
+.group_placeholder-item{
+  margin: 20rpx 0 0 0;
+}

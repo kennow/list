@@ -1,0 +1,54 @@
+<scroll-view height="100%" scroll-y="true" class="container topic withtab" bindscrolltoupper="upper" upper-threshold="1" lower-threshold="1" bindscrolltolower="lower">
+  <view class="ctnt1 placehold">
+    <block wx:for="{{group_topic_list}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+        <view class="feed-item"
+             catchtap="goDetail" 
+						 data-uid="{{item.uid}}" 
+             data-create_uid="{{item.create_uid}}"
+             data-uname="{{item.uname}}"
+             data-uavatar="{{item.uavatar}}"
+             data-join_time="{{item.join_time}}"
+						 data-title="{{item.title}}" 
+						 data-content="{{item.content}}" 
+						 data-topicid="{{item.topicid}}" 
+						 data-groupid="{{item.groupid}}" 
+						 data-comment_num="{{item.comment_num}}" 
+						 data-create_time="{{item.create_time}}">
+            <view class="feed-source">
+               <a class="">
+                    <view class="avatar">
+                        <image wx:if="{{item.uavatar}}" src="{{item.uavatar}}"></image>
+                    <text>{{item.uname}}</text>
+                    </view>
+                </a>
+              <text>{{item.create_time}}</text>
+            </view>
+            <view class="feed-content">
+                <view class="question" qid="{{item.topicid}}">
+                     <a class="question-link">
+                        <text>{{item.title}}</text>
+                    </a>
+                </view>
+                <view class="answer-body">
+                    <view>
+                        <text class="answer-txt" aid="{{item.topicid}}">{{item.content}}</text>
+                    </view>
+                    <view class="answer-actions">
+                         <text>微信群：</text>
+                         <open-data type="groupName" class="group-name" open-gid="{{item.groupid}}"></open-data>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+    <block wx:if="{{group_topic_list.length < 1}}">
+				<view class="group-topic-placeholder">
+          <view>这个群的同学很懒，需要你去拯救~</view>
+        </view>
+			</block>
+  </view>
+  <!-- 
+   </swiper-item>
+  </swiper>
+  -->
+</scroll-view>

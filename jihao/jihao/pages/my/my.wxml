@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="user-container bg-white">
+     <view class="userinfo">
+     <!--
+    <button class="btn" wx:if="{{!hasUserInfo&&canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    -->
+    <open-data bindtap="bindViewTap" class="userinfo-avatar"  type="userAvatarUrl"></open-data>
+    <open-data class="userinfo-nickname" type="userNickName"></open-data>
+  </view>
+
+</view>
+
+<view class="tab-container bg-white">
+    <view class="tab-item" hover-class="tab-item-hover" catchtap="goMyTopics">
+        <view>
+<!--          <image src="../../images/bought.png" mode="aspectFit" class="tab-icon"></image>
+-->  
+            <text class="tab-text">我的话题</text>
+        </view>
+        
+        <view class="tab-arrow"></view>
+    </view>
+    <view class="tab-item" hover-class="tab-item-hover" catchtap="clearStorageManual">
+        <view>
+            <text class="tab-text">清理缓存</text>
+        </view>
+        
+        <view class="tab-arrow"></view>
+    </view>
+     <view class="tab-item" hover-class="tab-item-hover" catchtap="suggest">
+        <view>
+            <text class="tab-text">意见反馈</text>
+        </view>
+        
+        <view class="tab-arrow"></view>
+    </view>
+</view>

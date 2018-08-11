@@ -1,0 +1,53 @@
+.weeks {
+    font-size:15px;
+}
+.rate {
+    font-size:15px;
+}
+checkbox {
+    display: none;
+}
+.halfTop {
+    margin-top: 5px;
+}
+.date {
+    color: #000000;
+}
+.img {
+    right:20px;
+    position:absolute;
+    height:15px;
+    width:15px;
+}
+.gray {
+    color:gray;
+}
+.margin-left {
+    margin-left: 45px;
+}
+.layout-column {
+    display:flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+.border-title {
+    display:flex;
+    width:750rpx;
+    height: 100rpx;
+    border-bottom:1px solid #eee;
+    background-color: white;
+}
+
+.border-content {
+    display:flex;
+    width:750rpx;
+    height: 300rpx;
+    border-bottom:1px solid #eee;
+    background-color: white;
+}
+
+.placeholdText{
+  display: flex;
+  text-align: right;
+
+}

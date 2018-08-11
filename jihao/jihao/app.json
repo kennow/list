@@ -1,0 +1,54 @@
+{
+    "pages": [
+        "pages/create/create",
+        "pages/topic/topic",
+        "pages/group_topic/group_topic",
+        "pages/create_to/create_to",
+        "pages/logs/logs",
+        "pages/group/group",
+        "pages/detail/detail",
+        "pages/comment/comment",
+        "pages/my/my",
+        "pages/suggest/suggest",
+        "pages/auth/auth"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#0068C4",
+        "navigationBarTitleText": "不二话题",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "color": "#626567",
+        "selectedColor": "#2A8CE5",
+        "backgroundColor": "#FBFBFB",
+        "borderStyle": "white",
+        "list": [
+          {
+            "pagePath": "pages/create/create",
+            "text": "发布",
+            "iconPath": "images/index.png",
+            "selectedIconPath": "images/index_focus.png"
+          },
+          {
+            "pagePath": "pages/topic/topic",
+            "text": "话题",
+            "iconPath": "images/index.png",
+            "selectedIconPath": "images/index_focus.png"
+          },{
+            "pagePath": "pages/group/group",
+            "text": "圈子",
+            "iconPath": "images/discovery.png",
+            "selectedIconPath": "images/discovery_focus.png"
+          },{
+            "pagePath": "pages/my/my",
+            "text": "我的",
+            "iconPath": "images/burger.png",
+            "selectedIconPath": "images/burger_focus.png"
+        }]
+    },
+    "networkTimeout": {
+        "request": 3000
+    }
+}

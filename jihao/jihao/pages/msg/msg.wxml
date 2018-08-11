@@ -1,0 +1,10 @@
+<view class="msg-item" wx:for="{{msgs}}" wx:for-item="msg" wx:key="id">
+  <view>
+    <image src="{{msg.icon}}" class="msg-icon"></image>
+  </view>
+  <view class="msg-content">
+    <text class="name-time">{{msg.sendName}} {{msg.createTime}}</text>
+    <view wx:if="{{msg.isRead}}"><view class="content-msg content-msg-read" data-id="{{msg.id}}" data-type="{{msg.type}}" data-attValue="{{msg.attValue}}" bindtap="detail">{{msg.msg}}</view></view>
+    <view wx:else><view class="content-msg" style="background-color: {{noReadBgc}}; color:{{noReadFc}}" data-id="{{msg.id}}" data-type="{{msg.type}}" data-attValue="{{msg.attValue}}" bindtap="detail">{{msg.msg}}</view></view>
+  </view>
+</view>

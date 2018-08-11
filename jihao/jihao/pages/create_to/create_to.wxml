@@ -1,0 +1,28 @@
+<!-- 创建成功 -->
+<view class="success">
+    
+    <view class="tit">
+        <text>{{name}}</text>
+    </view>
+
+    <view class="panel">
+        <view class="task-content">
+            <text>{{content}}</text>
+        </view>
+        <view class="line"></view>
+        <view>
+        <button class="btn" type="primary" style="background-color: #298DE5;margin-top: 30px;width:600rpx;" open-type="share">选择一个微信群，完成创建</button>
+        </view>
+<!--
+        <view class="tips">
+            <text>分享到微信群后，群好友点击进入，即可围绕该话题头脑风暴</text>
+        </view>
+-->
+    </view>
+
+
+
+    <view class="close" bindtap="bindClose">
+        <image src="../../../images/success-close.png"></image>
+    </view>
+</view>

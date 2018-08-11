@@ -1,0 +1,32 @@
+.msg-item {
+    display:flex;
+    flex-direction:row;
+    margin-bottom:10px;
+}
+.msg-icon {
+    margin-left: 10px;
+    width:29px;
+    height:29px;
+    border-radius:50%;
+}
+.msg-content {
+    margin-left: 10px;
+    margin-right: 20px;
+    display:flex;
+    flex-direction:column;
+}
+.name-time{
+    margin-top: 2px;
+    font-size:12px;
+    color:gray;
+}
+.content-msg{
+    margin-top: 5px;
+    padding: 5px 5px 5px 5px;
+    font-family:"宋体";
+    border-radius:5px;
+}
+.content-msg-read{
+    background-color: white;
+    color: black;
+}
